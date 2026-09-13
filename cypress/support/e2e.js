@@ -16,7 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
-// O site de testes carrega scripts de terceiros (anúncios/analytics) que lançam
-// erros cross-origin. Eles não têm relação com os testes, então não devem
-// derrubar a execução.
+// The site under test loads third-party scripts (ads/analytics) that throw
+// cross-origin errors. They are unrelated to our tests, so they should not
+// fail the test run.
 Cypress.on('uncaught:exception', () => false)

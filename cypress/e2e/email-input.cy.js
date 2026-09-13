@@ -1,5 +1,5 @@
-describe('Teste básico', () => {
-  it('acessa o site e preenche o campo Email', () => {
+describe('Basic test', () => {
+  it('visits the site and fills in the Email field', () => {
     cy.visit('https://www.qa-practice.com/elements/input/email')
 
     cy.get('#id_email')
